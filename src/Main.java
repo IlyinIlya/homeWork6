@@ -31,8 +31,8 @@ public class Main {
         //Напишите программу, которая выводит в консоль все високосные года,
         //начиная с 1904 года до 2096. В консоль результат должен выводиться
         //в формате: «… год является високосным».
-        for (int i = 1904; i <= 2096; i = i + 4) {
-            System.out.print(" " + i);
+        for (int year = 1904; year <= 2096; year = year + 4) {
+            System.out.print(" " + year);
         }
 
         System.out.println("");
@@ -57,29 +57,29 @@ public class Main {
         //вы будете откладывать по 29 000 рублей «в банку».
         //Выведите сумму накоплений за каждый месяц в консоль в формате:
         //«Месяц …, сумма накоплений равна … рублей».
-        int total1 = 0;
+        int total = 0;
         int salaryMonth = 29000;
-        for (int i = 1; i <= 12; i++) {
-            total1 = total1 + salaryMonth;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + total1 + " рублей");
+        for (int month = 1; month <= 12; month++) {
+            total = total + salaryMonth;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
         }
 
         System.out.println("Task 9");
         //Перепишите решение задачи выше при условии, что деньги вы откладывать будете
         //не «в банку», а в банк под проценты — 12% годовых. Выведите сумму накоплений
         //за каждый месяц в консоль в формате: «Месяц …, сумма накоплений равна … рублей».
-        int total2 = 0;
-        for (int i = 1; i <= 12; i++) {
-            total2 = total2 + total2/100;
-            total2 = total2 + salaryMonth;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + total2 + " рублей");
+        total = 0;
+        for (int month = 1; month <= 12; month++) {
+            total = total + total/100;
+            total = total + salaryMonth;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
         }
 
         System.out.println("Task 10");
         //Напишите программу, которая выводит в консоль таблицу умножения на 2.
-        int total3 = 2;
-        for (int i = 2, j = 1; j <= 10; j++, total3 = i * j) {
-            System.out.println(i + " * " + j + " = " + total3);
+        total = 2;
+        for (int i = 2, j = 1; j <= 10; j++, total = i * j) {
+            System.out.println(i + " * " + j + " = " + total);
         }
 
         System.out.println("Task 10 - 2 way");
