@@ -82,5 +82,11 @@ public class Main {
             System.out.println(i + " * " + j + " = " + total3);
         }
 
+        System.out.println("Task 10 - 2 way");
+        int y = 2;
+        for (int i = 1; i <= 10; i++) {
+            int x = y * i;
+            System.out.println(y + " * " + i + " = " + x);
+        }
         }
 }
